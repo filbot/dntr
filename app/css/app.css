@@ -1,5 +1,7 @@
 /* app css stylesheet */
 
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;
@@ -27,4 +29,95 @@
 .menu > li:nth-child(1):before {
   content: "";
   padding: 0;
+}
+
+body {
+  background-color: #E8E4E1;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.map img {
+  width: 100%;
+  height: auto;
+}
+
+.map {
+  position: relative;
+}
+
+.map .relocate {
+  position: absolute;
+  bottom: 1%;
+  left: 3%;
+  color: #000;
+  font-family: 'Entypo';
+  font-size: 5rem;
+  /*text-shadow: 0 2px 8px rgba(255,255,255,0.4);*/
+}
+
+.map .map-backside {
+  position: absolute;
+  bottom: 1%;
+  right: 3%;
+  color: #000;
+  font-family: 'Entypo';
+  font-size: 5rem;
+  /*text-shadow: 0 2px 8px rgba(255,255,255,0.4);*/
+}
+
+.card-container {
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 1rem;
+  text-align: left;
+  padding: 0;
+  margin: 0 0.5rem;
+}
+
+li {
+  background-color: #fff;
+  margin-bottom: 2%;
+  /*border-radius: 1rem;*/
+}
+
+li span {
+  font-family: 'Entypo';
+  font-size: 2rem;
+}
+
+.card-container .blood-a {
+  color: #ada;
+}
+
+.card-container .blood-b {
+  color: #add;
+}
+
+.card-container .blood-c {
+  color: #aad;
+}
+
+.card-container .info {
+  font-size: 2rem;
+  color: #999;
+}
+
+@font-face {
+  font-family: 'Entypo';
+  src: url("../fonts/entypo.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/entypo.eot?#iefix") format("embedded-opentype"), url("../fonts/entypo.woff") format("woff"), url("../fonts/entypo.ttf") format("truetype"), url("../fonts/entypo.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Entypo Social';
+  src: url("../fonts/entypo-social.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/entypo-social.eot?#iefix") format("embedded-opentype"), url("../fonts/entypo-social.woff") format("woff"), url("../fonts/entypo-social.ttf") format("truetype"), url("../fonts/entypo-social.svg#svgFontName") format("svg");
+  /* Legacy iOS */
 }
