@@ -1,4 +1,1 @@
-dntr
-====
-
-Blood donation helper
+# Blood donation app
