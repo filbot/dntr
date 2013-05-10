@@ -1,10 +1,50 @@
-'use strict';
+/**
+ * dntr angular module
+ * @type {object}
+ */
 
+var angular = angular || {};
 
-// Declare app level module which depends on filters, and services
-angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.directives', 'myApp.controllers']).
-  config(['$routeProvider', function($routeProvider) {
-    $routeProvider.when('/view1', {templateUrl: 'partials/partial1.html', controller: 'MyCtrl1'});
-    $routeProvider.when('/view2', {templateUrl: 'partials/partial2.html', controller: 'MyCtrl2'});
-    $routeProvider.otherwise({redirectTo: '/view1'});
+var dntrApp = angular.module('dntrApp', ['dntrApp.filters', 'dntrApp.services', 'dntrApp.directives', 'dntrApp.controllers', 'ui.compat']).run(function ($rootScope, $location, $state) {
+
+    'use strict';
+
+    // Provide the current location to all scopes
+    $rootScope.location = $location;
+
+    // Provide the current state to all scopes
+    $rootScope.$state = $state;
+
+    // Global console logging helper
+    $rootScope.log = function(variable) {
+        console.log(variable);
+    };
+
+    // Global alert helper
+    $rootScope.alert = function(text) {
+        window.alert(text);
+    };
+});
+
+dntrApp.config(['$stateProvider', function($stateProvider) {
+
+    // Configure the state service
+    $stateProvider
+    .state('main', {
+        url: '/',
+        templateUrl: 'partials/main.html',
+        controller: 'mainCtrl'
+    })
+    .state('main.address', {
+        url: '/{address}',
+        data: {
+            /* Arbitary state data */
+        }
+    })
+    .state('main.details', {
+        url: '/{details}',
+        data: {
+
+        }
+    });
   }]);

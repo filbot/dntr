@@ -1,11 +1,14 @@
-'use strict';
 
 /* Controllers */
 
-angular.module('myApp.controllers', []).
-  controller('MyCtrl1', [function() {
+angular.module('dntrApp.controllers', []).
+
+  controller('mainCtrl', [function () {
+
+      'use strict';
 
   }])
-  .controller('MyCtrl2', [function() {
 
-  }]);
+  .controller('MyCtrl2', [function () {
+
+}]);
