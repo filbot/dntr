@@ -35,12 +35,14 @@ body {
   background-color: #E8E4E1;
   margin: 0;
   font-family: 'Open Sans', sans-serif;
+  color: #333;
 }
 
 .map img {
+  top: 0;
+  left: 0;
   width: 100%;
   height: auto;
-  border: 7px #fff solid;
 }
 
 .map {
@@ -49,22 +51,28 @@ body {
 
 .map .relocate {
   position: absolute;
+  height: 2rem;
+  width: 2rem;
+  text-align: center;
   bottom: 1%;
   left: 3%;
-  color: #000;
   font-family: 'Entypo';
-  font-size: 5rem;
-  /*text-shadow: 0 2px 8px rgba(255,255,255,0.4);*/
+  font-size: 2rem;
+  line-height: 1;
+  background-color: rgba(255,255,255,0.7);
 }
 
 .map .map-backside {
   position: absolute;
+  height: 2rem;
+  width: 2rem;
+  text-align: center;
   bottom: 1%;
   right: 3%;
-  color: #000;
   font-family: 'Entypo';
-  font-size: 5rem;
-  /*text-shadow: 0 2px 8px rgba(255,255,255,0.4);*/
+  font-size: 2rem;
+  line-height: 1;
+  background-color: rgba(255,255,255,0.7);
 }
 
 .card-container {
@@ -76,14 +84,26 @@ ul {
   font-size: 1rem;
   text-align: left;
   padding: 0;
-  margin: 0 2px;
+  margin: 0;
 }
 
 li {
   background-color: #fff;
   margin-bottom: 2%;
-  border-left: solid 5px #add;
-  /*border-radius: 1rem;*/
+  line-height: 1.2rem;
+  padding: 4% 0;
+}
+
+li.one {
+  border-left: solid 10px #B1C953;
+}
+
+li.two {
+  border-left: solid 10px #37ACB5;
+}
+
+li.three {
+  border-left: solid 10px #FF9646;
 }
 
 li span {
@@ -104,12 +124,31 @@ li span {
 }
 
 .card-container .info {
-  font-size: 2rem;
+  display: inline-block;
+  font-family: 'Entypo';
+  font-size: 3rem;
   color: #999;
+  margin-right: 0.5rem;
+  float: right;
+  line-height: 3rem;
 }
 
 .card-container .time {
-  float: left;
+  display: inline-block;
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+  min-width: 40px;
+}
+
+.card-container .address {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.card-container .city {
+  font-size: 0.8rem;
+  font-weight: 300;
 }
 
 @font-face {
