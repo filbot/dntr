@@ -3,9 +3,11 @@
 
 angular.module('dntrApp.controllers', []).
 
-  controller('mainCtrl', [function () {
+  controller('mainCtrl', ['$scope', function ($scope) {
 
       'use strict';
+
+
 
   }])
 
