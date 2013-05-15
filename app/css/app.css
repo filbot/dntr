@@ -80,8 +80,34 @@ body {
   /*text-shadow: 0 2px 8px rgba(255,255,255,0.4);*/
 }
 
-.card-container {
-  width: 100%;
+.card-container li {
+  display: -webkit-flex;
+  display: -webkit-box;
+}
+
+.card-container .info {
+  font-size: 2rem;
+  color: #999;
+  -webkit-flex: 1;
+  -webkit-box-flex: 1;
+  text-align: right;
+  margin-right: 0.5rem;
+  line-height: 2.5rem;
+}
+
+.card-container .time {
+  -webkit-flex: 1;
+  -webkit-box-flex: 1;
+  text-align: left;
+  margin-left: 0.5rem;
+  line-height: 3rem;
+}
+
+.card-container .address {
+  -webkit-flex: 3;
+  -webkit-box-flex: 3;
+  text-align: center;
+  line-height: 1.5rem;
 }
 
 ul {
@@ -96,33 +122,11 @@ li {
   background-color: #fff;
   margin-bottom: 2%;
   border-left: solid 5px #add;
-  /*border-radius: 1rem;*/
 }
 
 li span {
   font-family: 'Entypo';
-  font-size: 2rem;
-}
-
-.card-container .blood-a {
-  color: #ada;
-}
-
-.card-container .blood-b {
-  color: #add;
-}
-
-.card-container .blood-c {
-  color: #aad;
-}
-
-.card-container .info {
-  font-size: 2rem;
-  color: #999;
-}
-
-.card-container .time {
-  float: left;
+  /*font-size: 2rem;*/
 }
 
 @font-face {
