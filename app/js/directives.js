@@ -22,7 +22,7 @@ angular.module('dntrApp.directives', [])
           mapTypeId: google.maps.MapTypeId.ROADMAP
         };
 
-        var map = new google.maps.Map(document.getElementById('map-container'), mapOptions);
+        scope.map = new google.maps.Map(document.getElementById('map-container'), mapOptions);
 
     };
   }]);
